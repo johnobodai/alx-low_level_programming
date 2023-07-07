@@ -5,7 +5,7 @@
 
 int main(void){
 
-	_abs(89);
+	jack_bauer();
 	return (0);
 }
 
