@@ -9,3 +9,4 @@ Please refer to the individual project directories for detailed instructions and
 For more information and contact details, please see the GitHub repository.
 
 
+#!/bin/bash
