@@ -2,6 +2,7 @@
 /*
  * main - Entry point of the program
  *
+ * This function prints the size of various type on the computer it is compiletd and run on
  * Return: Always 0 (Success)
  */
 int main(void)
