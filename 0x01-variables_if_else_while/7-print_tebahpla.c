@@ -1,19 +1,24 @@
 #include <stdio.h>
+
 /**
- * main -
+ * main - Entry point of the program
  *
- * what the function does here
+ * Description: Prints the lowercase alphabets from 'z' to 'a', followed by a new line.
  *
- * Returns
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char alpha;
-alpha = 'z';
-for (; alpha >= 'a'; alpha--)
-{
-putchar(alpha);
+	char alpha;
+
+	alpha = 'z';
+	for (; alpha >= 'a'; alpha--)
+	{
+		putchar(alpha);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-return (0);
-}
+
