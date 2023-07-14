@@ -8,7 +8,7 @@
  * Assigns a random number to the variable n each time itis executed
  * and determines if the n is positive, negative or zero
  *
- * Returns: Always 0 (Success)
+ * Returns: Always 0 - (indicating successful execution)
  */
 int main(void)
 {
