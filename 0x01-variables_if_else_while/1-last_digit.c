@@ -6,9 +6,6 @@
  * main - Entry point of the program
  *
  * Description: This program generates a random number and prints its last digit.
- *              It also provides additional information about the last digit,
- *              such as whether it is greater than 5, equal to 0,
- *              or less than 6 and not 0.
  *
  * Return: Always 0 (Success)
  */
