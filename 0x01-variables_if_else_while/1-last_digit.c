@@ -5,7 +5,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program generates a random number and 
+ * Description: This program generates a random number and
  *              prints its last digit.
  *
  * Return: Always 0 (Success)
