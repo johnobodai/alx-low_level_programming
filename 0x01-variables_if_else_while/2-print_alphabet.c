@@ -1,19 +1,21 @@
 #include <stdio.h>
+
 /**
- * main -
+ * main - Entry point of the program
  *
- * what do you do?
+ * Description: Prints the alphabet in lowercase, followed by a new line.
  *
- * Returns:
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char small_alph = 'a';
-while (small_alph <= 'z')
-{
-putchar(small_alph);
-small_alph++;
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-return (0);
-}
+
