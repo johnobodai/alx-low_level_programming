@@ -18,24 +18,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2; /* Generate a random number and store it in n */
 
 	/* Print the number */
-	printf("The number ");
+	printf("The number %d is ", n);
 
-	/* Check if the number is zero */
-	if (n == 0)
-		printf("0 is zero\n");
+	/* Check if the number is positive, negative, or zero */
+	if (n > 0)
+		printf("positive\n");
+	else if (n < 0)
+		printf("negative\n");
 	else
-	{
-		/* Print the absolute value of the number */
-		if (n < 0)
-			n *= -1;
-		printf("%d is ", n);
-
-		/* Check if the number is positive or negative */
-		if (n > 0)
-			printf("positive\n");
-		else
-			printf("negative\n");
-	}
+		printf("zero\n");
 
 	return (0);
 }
