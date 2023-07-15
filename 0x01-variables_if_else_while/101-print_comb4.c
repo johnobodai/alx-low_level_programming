@@ -28,6 +28,12 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				else
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+				}
 			}
 		}
 	}
