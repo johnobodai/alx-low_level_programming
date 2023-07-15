@@ -3,18 +3,17 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the lowercase alphabets from 'z' to 'a', followed by a new line.
+ * Description: Prints the lowercase alphabet in reverse.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alpha;
+	char letter;
 
-	alpha = 'z';
-	for (; alpha >= 'a'; alpha--)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
-		putchar(alpha);
+		putchar(letter);
 	}
 
 	putchar('\n');
