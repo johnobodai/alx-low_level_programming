@@ -12,22 +12,22 @@
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0));  /* Seed the random number generator */
-    n = rand() - RAND_MAX / 2;  /* Generate a random number and store it in n */
+	srand(time(0)); /* Seed the random number generator */
+	n = rand() - RAND_MAX / 2; /* Generate a random number and store it in n */
 
-    /* Print the number */
-    printf("The number %d ", n);
+	/* Print the number */
+	printf("The number %d ", n);
 
-    /* Check the number and print the corresponding message */
-    if (n > 0)
-        printf("is positive\n");
-    else if (n == 0)
-        printf("is zero\n");
-    else
-        printf("is negative\n");
+	/* Check the number and print the corresponding message */
+	if (n > 0)
+		printf("is positive\n");
+	else if (n < 0)
+		printf("is negative\n");
+	else
+		printf("is zero\n");
 
-    return (0);
+	return (0);
 }
 
