@@ -3,31 +3,38 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints all possible combinations of three single-digit numbers
- *              in ascending order, separated by commas and spaces.
+ * Description: Prints all possible different combinations of three digits
+ *              in ascending order.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int digit1;
+	int digit2;
+	int digit3;
 
-	for (i = 0; i < 10; i++)
+	for (digit1 = 0; digit1 <= 7; digit1++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (digit2 = digit1 + 1; digit2 <= 8; digit2++)
 		{
-			for (k = j + 1; k < 10; k++)
+			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				putchar((i != 7 || j != 8 || k != 9) ? ',' : '\n');
-				putchar((i != 7 || j != 8 || k != 9) ? ' ' : '\0');
+				putchar(digit1 + '0');
+				putchar(digit2 + '0');
+				putchar(digit3 + '0');
+
+				if (digit1 != 7 || digit2 != 8 || digit3 != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 
+	putchar('\n');
+
 	return (0);
 }
+
