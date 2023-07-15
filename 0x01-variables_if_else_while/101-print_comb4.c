@@ -3,8 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all possible combinations of three
- *              single-digit numbers in ascending order.
+ * Description: Prints all possible combinations of three single-digit numbers
+ *              in ascending order, separated by commas and spaces.
  *
  * Return: Always 0 (Success)
  */
@@ -20,23 +20,14 @@ int main(void)
 		{
 			for (k = j + 1; k < 10; k++)
 			{
-				if (i != 7 || j != 8 || k != 9)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					putchar(',');
-					putchar(' ');
-				}
-				else
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-				}
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				putchar((i != 7 || j != 8 || k != 9) ? ',' : '\n');
+				putchar((i != 7 || j != 8 || k != 9) ? ' ' : '\0');
 			}
 		}
 	}
-	putchar('\n');
+
 	return (0);
 }
