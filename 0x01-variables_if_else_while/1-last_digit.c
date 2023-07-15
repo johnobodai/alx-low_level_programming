@@ -5,27 +5,29 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program generates a random number and
- *              prints its last digit.
+ * Description: This program generates a random number and prints whether
+ *              the number is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
+    int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    srand(time(0));  /* Seed the random number generator */
+    n = rand() - RAND_MAX / 2;  /* Generate a random number and store it in n */
 
-	printf("Last digit of %d is %d and is ", n, n % 10);
+    /* Print the number */
+    printf("The number %d ", n);
 
-	if (n % 10 > 5)
-		printf("greater than 5\n");
-	else if (n % 10 == 0)
-		printf("0\n");
-	else
-		printf("less than 6 and not 0\n");
+    /* Check the number and print the corresponding message */
+    if (n > 0)
+        printf("is positive\n");
+    else if (n == 0)
+        printf("is zero\n");
+    else
+        printf("is negative\n");
 
-	return (0);
+    return (0);
 }
 
