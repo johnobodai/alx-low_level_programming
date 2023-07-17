@@ -27,7 +27,7 @@ int main(void)
 	else if (last_digit > 0)
 		printf("greater than 5\n");
 	else
-		printf("is 0\n");
+		printf("0\n");
 
 	return (0);
 }
