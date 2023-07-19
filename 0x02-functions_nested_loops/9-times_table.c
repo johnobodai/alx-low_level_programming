@@ -6,33 +6,33 @@
  *              0 to 9 in a grid format. Each number is separated by a comma
  *              and a space.The table is printed using the _putchar function.
  */
-
 void times_table(void)
 {
-	int i;
-	int j;
-	int k;
+	int x, y, product;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x <= 9; x++)
 	{
-		for (j = 0; j < 10; j++)
+		for (y = 0; y <= 9; y++)
 		{
-			k = i * j;
-
-			if (k < 10)
-			{
-				_putchar(' ');
-				_putchar(k + '0');
-			}
-			else
-			{
-				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
-			}
-			if (j < 9)
+			product = x * y;
+			if (y != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
+			}
+			if (y == 0)
+			{
+				_putchar('0');
+			}
+			else if (product >= 10)
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+			}
+			else if ((product < 10) && (y != 0))
+			{
+				_putchar(' ');
+				_putchar((product % 10) + '0');
 			}
 		}
 		_putchar('\n');
