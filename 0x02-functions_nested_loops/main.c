@@ -4,7 +4,8 @@
  */
 
 int main(void){
-_isalpha(87);
+
+	print_sign(89);
 	return (0);
 }
 
