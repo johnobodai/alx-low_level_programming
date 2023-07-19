@@ -5,7 +5,7 @@
 
 int main(void){
 
-	print_sign(89);
+	_abs(89);
 	return (0);
 }
 
