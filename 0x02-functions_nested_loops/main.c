@@ -4,8 +4,7 @@
  */
 
 int main(void){
-
-	print_alphabet_x10();
+_islower(78);
 
 	return (0);
 }
