@@ -4,8 +4,7 @@
  */
 
 int main(void){
-_islower(78);
-
+_isalpha(87);
 	return (0);
 }
 
