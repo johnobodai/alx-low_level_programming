@@ -3,14 +3,11 @@
 /**
  * mul - Multiplies two integers
  * @a: The first number to multiply
- * @b: The second number to multiply with the first number
+ * @b: The second number to multiply with first number
  *
- * Return: The product of the two integers
+ * Return: The result of multiplication between x param and y param
  */
 int mul(int a, int b)
 {
-	int result
-	result = a * b;
-	return (result);
+	return (a * b);
 }
-
