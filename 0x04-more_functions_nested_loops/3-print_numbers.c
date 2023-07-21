@@ -3,7 +3,8 @@
 /**
  * print_numbers - Prints numbers from 0 to 9.
  *
- * Description: This function prints the numbers from 0 to 9 to the standard output.
+ * Description: This function prints the numbers from 0 to 9 to the
+ *              standard output.
  *
  * Return: void
  */
