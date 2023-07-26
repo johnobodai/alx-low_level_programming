@@ -4,7 +4,8 @@
  * @a: the first parameter
  * @b: the second parameter
  *
- * description : this function takes two integer pointers and swaps their values
+ * description : this function takes two integer pointers and swaps
+ *               their values
  *
  * Return: Always void
  */
