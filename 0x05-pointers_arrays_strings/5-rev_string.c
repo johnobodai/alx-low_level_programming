@@ -10,9 +10,10 @@
 void rev_string(char *s)
 {
 	int length;
-	length = 0;
 	char temp;
+	int i;
 
+	length = 0;
 	/* check if the input string is NULL */
 	if ((s == NULL))
 		return;
@@ -23,8 +24,6 @@ void rev_string(char *s)
 
 	/* swap characters from both ends of the string towards the center */
 	{
-		int i;
-
 		for (i = 0; i < length / 2; i++)
 		{
 			temp = s[i];
