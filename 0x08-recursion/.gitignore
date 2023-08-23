@@ -4,3 +4,13 @@
 # Ignore _putchar.c
 _putchar.c
 
+# Ignore compiled files
+*.o
+*.out
+
+# Ignore editor temporary files
+*~
+
+# Ignore executables
+/exercises/*.exe
+
