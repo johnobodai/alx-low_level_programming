@@ -1,0 +1,6 @@
+# Vim temporary files
+*.swp
+
+# Ignore _putchar.c
+_putchar.c
+
