@@ -14,3 +14,5 @@ _putchar.c
 # Ignore executables
 /exercises/*.exe
 
+# Ignore main.c files
+*main.c
